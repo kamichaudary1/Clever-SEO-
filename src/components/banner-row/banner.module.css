@@ -1,0 +1,8 @@
+/* styles/Banner.module.css */
+
+.banner {
+    background-image: url('../../../public/images/hero-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    height: calc( 100vh - 80px );
+  }
