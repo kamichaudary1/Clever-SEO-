@@ -35,7 +35,10 @@ export default function Header() {
       <div className="flex items-center justify-between w-[180px]">
         <Login />
         <DefaultBtn 
-          text="Start Writing" 
+          text="Start Writing"
+          textColor="white" 
+          bgColor="#5DA389"
+          hoverBgColor="black"
         />
       </div>
     </header>
