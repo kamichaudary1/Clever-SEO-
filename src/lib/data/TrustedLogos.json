@@ -1,0 +1,37 @@
+{
+    "logos": [
+      {
+        "src": "/images/logo1.png",
+        "alt": "Airwo logo"
+      },
+      {
+        "src": "/images/logo2.png",
+        "alt": "Neurasync logo"
+      },
+      {
+        "src": "/images/logo3.png",
+        "alt": "Holonet logo"
+      },
+      {
+        "src": "/images/logo4.png",
+        "alt": "ByteForge logo"
+      },
+      {
+        "src": "/images/logo5.png",
+        "alt": "Hexel logo"
+      },
+      {
+        "src": "/images/logo6.png",
+        "alt": "PIXELCLOUD logo"
+      },
+      {
+        "src": "/images/logo3.png",
+        "alt": "PIXELCLOUD logo"
+      },
+      {
+        "src": "/images/logo6.png",
+        "alt": "PIXELCLOUD logo"
+      }
+    ]
+  }
+  

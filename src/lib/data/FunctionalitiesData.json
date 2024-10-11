@@ -1,0 +1,78 @@
+{
+    "functionalitiesBG": {
+      "src": "/images/functionalities-bg.jpg"
+    },
+    "functionalities": [
+      {
+        "functionalitiesTitle": "Web Research",
+        "functionalitiesList": [
+          {
+            "listInfo": "Research any topic on the web."
+          },
+          {
+            "listInfo": "Search specific websites provided by the user."
+          },
+          {
+            "listInfo": "Access up-to-date and relevant information for your content needs."
+          }
+        ]
+      },
+      {
+        "functionalitiesTitle": "Use by Anyone",
+        "functionalitiesList": [
+          {
+            "listInfo": "User-friendly for all, regardless of experience level."
+          },
+          {
+            "listInfo": "Accessible design, perfect for beginners and professionals alike."
+          }
+        ]
+      },
+      {
+        "functionalitiesTitle": "SEO Optimized Content Writing",
+        "functionalitiesList": [
+          {
+            "listInfo": "Automatically generate SEO-optimized content for better rankings."
+          },
+          {
+            "listInfo": "Improve keyword targeting and content structure."
+          },
+          {
+            "listInfo": "Ensure your content aligns with current SEO best practices."
+          },
+          {
+            "listInfo": "Save time while producing high-quality, optimized content."
+          },
+          {
+            "listInfo": "Analyze how well your content performs in terms of SEO and adapt for better results."
+          }
+        ]
+      },
+      {
+        "functionalitiesTitle": "Content Automation",
+        "functionalitiesList": [
+          {
+            "listInfo": "Automate blogs, newsletters, articles, and more with ease."
+          },
+          {
+            "listInfo": "Effortlessly manage your content creation pipeline."
+          },
+          {
+            "listInfo": "Schedule content publishing and updates automatically."
+          },
+          {
+            "listInfo": "Integrate with various platforms for easy content distribution."
+          }
+        ]
+      },
+      {
+        "functionalitiesTitle": "Versatile Content Types",
+        "functionalitiesList": [
+          {
+            "listInfo": "Create books, success stories, and a wide variety of other content effortlessly."
+          }
+        ]
+      }
+    ]
+  }
+  
