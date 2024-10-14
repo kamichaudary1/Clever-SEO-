@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import bannerData from '@/lib/data/bannerData.json';
 import { BannerData } from '@/types/BannerDataTypes';
-import DefaultBtn from '../global/DefaultBtn';
+import DefaultBtn from '@/components/global/DefaultBtn';
 
 export default function BannerRow() {
   // Destructure bannerTitle and image from the banner data

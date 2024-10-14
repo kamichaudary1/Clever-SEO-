@@ -7,19 +7,19 @@ export default function FunctionalitiesRow() {
 
   return (
     <div
-      className="flex items-center justify-center relative flex-wrap"
+      className="flex items-center justify-center relative flex-wrap py-16 mx-5 xl:mx-0"
       style={{
         backgroundImage: `url(${image.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "calc(100vh - 80px)",
+        height: "100%",
       }}
     >
       <div className="w-full">
-        <h2 className="text-center text-3xl font-semibold pb-5 text-black">Functionalities</h2>
+        <h2 className="text-center text-3xl font-semibold pb-5 text-[#5DA389]">Functionalities</h2>
       </div>
-      <div className="px-5 xl:px-0 xl:max-w-6xl mx-auto">
+      <div className="px-5 xl:px-0 xl:max-w-6xl mx-auto flex items-start">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 w-full h-full">
           {/* First column with two boxes */}
           <div className="md:col-span-1 flex flex-col gap-4 h-full">

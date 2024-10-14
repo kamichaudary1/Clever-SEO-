@@ -29,9 +29,10 @@ export default function Nav( { isMenuOpen }: NavProps ) {
     >
       {navLinks.map((link) => (
         <Link 
-            key={link.href} 
-            href={link.href}
-            className="flex w-full md:w-auto text-white md:text-black text-xl px-2 py-2 md:p-0 hover:text-[#5DA389] font-medium transition-colors duration-300"
+          key={link.href} 
+          href={link.href}
+          className="flex w-full md:w-auto text-white md:text-black text-xl md:text-[14px] xl:text-xl px-2 py-2 md:p-0 
+          hover:text-[#5DA389] font-medium transition-colors duration-300"
         >
           {link.label}
         </Link>

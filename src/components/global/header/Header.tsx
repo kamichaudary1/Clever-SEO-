@@ -1,4 +1,4 @@
-"use client"; // Mark this component as a client-side component
+"use client";
 
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between w-full px-8 py-5 bg-white">
+    <header className="flex justify-between w-full px-8 xl:px-24 py-4 bg-white">
       <div className="flex items-center w-48">
         <Link href="/">
             <Image
@@ -32,13 +32,14 @@ export default function Header() {
         setIsMenuOpen= { setIsMenuOpen }
       />
       <Nav isMenuOpen={isMenuOpen} />
-      <div className="flex items-center justify-between w-[180px]">
+      <div className="flex items-center justify-between w-[220px]">
         <Login />
         <DefaultBtn 
           text="Start Writing"
           textColor="white" 
           bgColor="#5DA389"
           hoverBgColor="black"
+          fontSize="20px"
         />
       </div>
     </header>

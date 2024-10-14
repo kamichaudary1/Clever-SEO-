@@ -1,4 +1,3 @@
-// src/components/FunctionalitiesColumn.tsx
 interface FunctionalitiesColumnProps {
     functionality: {
       functionalitiesTitle: string;
@@ -17,12 +16,12 @@ interface FunctionalitiesColumnProps {
         style={{ background: `linear-gradient(${gradientDirection}, #1AA7A7, #C0FFC8)` }}
       >
         <div className="bg-white rounded-lg shadow p-5 h-full">
-          <h3 className="text-xl font-bold mb-3 px-5">
+          <h3 className="mb-3 px-7 text-2xl font-bold">
             {functionality.functionalitiesTitle}
           </h3>
-          <ul className="list-disc px-5">
+          <ul className="list-disc px-8">
             {functionality.functionalitiesList.map((item, itemIndex) => (
-              <li key={itemIndex} className="text-gray-700 pb-3 last:pb-0">
+              <li key={itemIndex} className="text-gray-700 pb-3 last:pb-0 text-xl font-light">
                 {item.listInfo}
               </li>
             ))}

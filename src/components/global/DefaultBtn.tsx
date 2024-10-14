@@ -1,3 +1,4 @@
+"use client";
 // DefaultBtn.tsx
 import { Button } from "@/components/ui/button";
 
@@ -7,6 +8,8 @@ interface DefaultBtnProps {
   bgColor?: string;
   textColor?: string;
   hoverBgColor?: string;
+  border?: string;
+  hovertextColor?: string;
   size?: 'small' | 'medium' | 'large'; // size prop with options
   onClick?: () => void;
 }
@@ -17,6 +20,8 @@ export default function DefaultBtn({
   textColor,
   hoverBgColor,
   fontSize,
+  border,
+  hovertextColor,
   size = 'small',
   onClick,
 }: DefaultBtnProps) {
@@ -30,9 +35,9 @@ export default function DefaultBtn({
 
   return (
     <Button
-      style={{ backgroundColor: bgColor, color: textColor, fontSize: fontSize }}
+      style={{ backgroundColor: bgColor, color: textColor, fontSize: fontSize, border: border }}
       onClick={onClick}
-      className={`transition-all duration-300 font-bold ${sizeClasses[size]}`} // apply size-based styles
+      className={`transition-all duration-300 font-medium ${sizeClasses[size]}`} // apply size-based styles
       onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverBgColor)}
       onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = bgColor)}
     >
