@@ -25,13 +25,14 @@ export default function Nav( { isMenuOpen }: NavProps ) {
     <nav
       className={`${
         isMenuOpen ? "block" : "hidden"
-      } absolute left-0 top-16 z-10 bg-black p-3 md:bg-transparent md:static max-w-md w-full md:flex md:justify-between md:items-center transition-all`}
+      } absolute left-0 top-24 z-10 bg-black p-0 md:bg-transparent md:static md:max-w-80 lg:max-w-md w-full md:flex md:justify-between md:items-center transition-all`}
     >
       {navLinks.map((link) => (
         <Link 
-            key={link.href} 
-            href={link.href}
-            className="flex w-full md:w-auto text-white md:text-black text-xl px-2 py-2 md:p-0 hover:text-[#5DA389] font-medium transition-colors duration-300"
+          key={link.href} 
+          href={link.href}
+          className="flex w-full md:w-80 md:text-black text-white text-xl md:text-[14px] xl:text-xl px-2 py-2 md:p-0 
+          hover:text-[#5DA389] font-medium transition-colors duration-300"
         >
           {link.label}
         </Link>

@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "userTitle": "Hear from our Users",
+        "userTagline": "Discover how CleverSEO has empowered writers, marketers, and businesses to create high-impact, SEO-optimized content effortlessly. See what they have to say about their experience and results.",
+        "usersList": [
+          {
+            "userThumbnail": "/images/user-thumbnail1.png",
+            "userTitle": "James P.",
+            "userDescp": "CleverSEO has completely transformed my content creation process. The AI suggestions and SEO insights are spot on, saving me hours of work every week. My articles are ranking higher, and I couldn't be more satisfied!"
+          },
+          {
+            "userThumbnail": "/images/user-thumbnail2.png",
+            "userTitle": "Michael R.",
+            "userDescp":"I’ve tried multiple writing tools, but CleverSEO stands out with its real-time SEO analysis and competitor insights. It’s like having an SEO expert by your side while you write. Highly recommended for anyone serious about content marketing."
+          },
+          {
+            "userThumbnail": "/images/user-thumbnail3.png",
+            "userTitle": "David L.",
+            "userDescp":"As a digital marketer, I rely on SEO to drive traffic, and CleverSEO has been a game-changer. The AI suggestions are incredibly accurate, and I’ve seen significant improvements in my search engine rankings since I started using it."
+          },
+          {
+            "userThumbnail": "/images/user-thumbnail4.png",
+            "userTitle": "John R.",
+            "userDescp": "What I love about CleverSEO is how easy it makes complex SEO tasks. From keyword suggestions to real-time optimization tips, it helps me focus on writing while ensuring my content is fully optimized. A must-have tool for any content creator!"
+          }
+        ]
+      }
+    ]
+}

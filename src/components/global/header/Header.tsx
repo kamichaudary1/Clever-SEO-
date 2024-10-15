@@ -1,4 +1,4 @@
-"use client"; // Mark this component as a client-side component
+"use client";
 
 import { useState } from "react";
 
@@ -15,15 +15,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between w-full px-8 py-5 bg-white">
-      <div className="flex items-center w-48">
+    <header className="flex flex-wrap justify-between w-full px-4 xl:px-24 py-4 bg-white">
+      <div className="flex items-center md:w-36 lg:w-48">
         <Link href="/">
             <Image
               src='/images/logo.svg'
               alt="logo"
-              className="xs:w-full md:w-[180px] mb-2"
-              width={266}
-              height={40}
+              width={185}
+              height={28}
             />
         </Link>
       </div>
@@ -32,13 +31,16 @@ export default function Header() {
         setIsMenuOpen= { setIsMenuOpen }
       />
       <Nav isMenuOpen={isMenuOpen} />
-      <div className="flex items-center justify-between w-[180px]">
+      <div className="flex items-center justify-between w-full md:w-[220px] mt-4 md:mt-0">
         <Login />
         <DefaultBtn 
           text="Start Writing"
-          textColor="white" 
+          textColor="primary" 
+          hovertextColor="secondary" 
+          fontSize="20px"
           bgColor="#5DA389"
           hoverBgColor="black"
+          size="small"
         />
       </div>
     </header>
