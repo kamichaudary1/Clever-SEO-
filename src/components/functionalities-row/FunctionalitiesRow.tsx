@@ -7,13 +7,12 @@ export default function FunctionalitiesRow() {
 
   return (
     <div
-      className="flex items-center justify-center relative flex-wrap py-16 mx-5 xl:mx-0"
+      className="flex items-center justify-center relative flex-wrap py-10 md:mx-5 xl:mx-0"
       style={{
         backgroundImage: `url(${image.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "100%",
       }}
     >
       <div className="w-full">

@@ -6,13 +6,13 @@ export default function UsersRow() {
   const userContent: UsersDataType = userData.users[0];
 
   return (
-    <div className="py-14">
+    <div className="py-12 pb-20">
       <div className="max-w-6xl mx-5 xl:mx-auto">
         {/* Title and Tagline */}
         <h2 className="text-center text-3xl font-semibold text-black">
           {userContent.userTitle}
         </h2>
-        <p className="w-full text-center mt-9 mb-11 text-[#4C4C4C] text-xl font-normal">
+        <p className="w-full text-center mt-10 mb-20 text-[#4C4C4C] text-xl font-normal">
           {userContent.userTagline}
         </p>
 

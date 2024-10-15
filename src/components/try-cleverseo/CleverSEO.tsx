@@ -20,7 +20,9 @@ export default function CleverSEOComponent() {
       </h2>
       
       {/* Tagline */}
-      <span className='block text-center text-4xl text-white font-normal mt-4'>
+      <span 
+        className='block text-center text-4xl text-white font-normal mt-4'
+        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}>
         {seoContent.seoTagline}
       </span>
       
@@ -28,11 +30,12 @@ export default function CleverSEOComponent() {
       <div className='flex justify-center mt-6'>
         <DefaultBtn 
           text="Start Writing"
-          textColor="black" 
+          textColor="secondary"
+          hovertextColor="secondary" 
+          fontSize="32px"
           bgColor="white"
           hoverBgColor="#5DA389"
-          size="large"
-          fontSize="32px"
+          size="medium"
           border="2px solid"
         />
       </div>
