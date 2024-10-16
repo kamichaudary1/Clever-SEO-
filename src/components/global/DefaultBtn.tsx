@@ -59,8 +59,8 @@ export default function DefaultBtn({
         ${buttonColor[textColor]}
         ${hoverColor[hovertextColor]}
       `}
-      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverBgColor)}
-      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = bgColor)}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverBgColor || "")}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = bgColor || "")}
     >
       {text}
     </Button>
