@@ -16,13 +16,14 @@ export default function Header() {
 
   return (
     <header className="flex flex-wrap justify-between w-full px-4 xl:px-24 py-4 bg-white">
-      <div className="flex items-center md:w-36 lg:w-48">
+      <div className="flex items-center">
         <Link href="/">
             <Image
               src='/images/logo.svg'
               alt="logo"
               width={185}
               height={28}
+              className="w-auto h-auto"
             />
         </Link>
       </div>

@@ -16,7 +16,7 @@ export default function UserCard({ userThumbnail, userTitle, userDescp }: UserCa
           alt={userTitle}
           width={170}
           height={100}
-          className="rounded-lg object-cover w-full md:w-auto"
+          className="rounded-lg object-cover w-auto h-auto"
         />
       </div>
 

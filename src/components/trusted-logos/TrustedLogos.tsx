@@ -63,6 +63,7 @@ export default function TrustedLogosComponent() {
                 alt={logo.alt} 
                 width={90} 
                 height={90}
+                className="w-auto h-auto"
               />
             </div>
           </div>

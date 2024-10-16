@@ -58,8 +58,8 @@ export default function Footer() {
             {socialMediaLinks.map(item => (
               <li key={item.label}>
                 <Link 
-                  className='text-[14px] font-normal pb-1'
-                  href={item.href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2"
+                  className='flex items-center space-x-2 text-[14px] font-normal pb-1'
+                  href={item.href} target="_blank" rel="noopener noreferrer"
                 >
                   {item.icon} {/* Icon */}
                   <span className=' hover:text-[#5DA389]'>{item.label}</span> {/* Label */}

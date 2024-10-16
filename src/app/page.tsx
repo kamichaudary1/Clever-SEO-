@@ -1,5 +1,3 @@
-import Image from "next/image";
-// import HomeComponent from "@/pages/home/Home";
 import BannerRow from "@/components/banner-row/BannerRow";
 import BannerTagline from "@/components/banner-tagline/BannerTagline";
 import TrustedLogos from "@/components/trusted-logos/TrustedLogos";
