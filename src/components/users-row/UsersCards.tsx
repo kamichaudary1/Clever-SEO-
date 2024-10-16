@@ -16,14 +16,14 @@ export default function UserCard({ userThumbnail, userTitle, userDescp }: UserCa
           alt={userTitle}
           width={170}
           height={100}
-          className="rounded-lg object-cover w-auto h-auto"
+          className="rounded-lg object-cover w-full md:w-auto h-auto"
         />
       </div>
 
       {/* User Title and Description */}
-      <div className="flex-1 pt-7 pb-3 px-5">
+      <div className="flex-1 pt-5 md:pt-7 pb-4 px-5">
         <h3 className="text-3xl font-medium text-black">{userTitle}</h3>
-        <p className="text-[#4C4C4C] text-[14px] mt-5">{userDescp}</p>
+        <p className="text-[#4C4C4C] text-[14px] mt-2 md:mt-5">{userDescp}</p>
       </div>
     </div>
   );

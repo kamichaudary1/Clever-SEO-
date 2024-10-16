@@ -21,7 +21,8 @@ export default function TrustedLogosComponent() {
       {
         breakpoint: 375,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
+          centerPadding: '40px',
         },
       },
       {
@@ -53,7 +54,7 @@ export default function TrustedLogosComponent() {
 
   return (
     <div className='bg-white pt-5 pb-12 overflow-hidden'> {/* Center-aligns the container */}
-      <h2 className='text-center text-black text-3xl font-semibold pb-9'>Trusted by</h2>
+      <h2 className='text-center text-black text-xl md:text-3xl font-semibold pb-9'>Trusted by</h2>
       <Slider {...settings}>
         {logoData.logos.map((logo, index) => (
           <div key={index} className="flex justify-center">

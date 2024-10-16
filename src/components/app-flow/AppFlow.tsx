@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function AppFlow() {
   return (
-    <div className="bg-[rgba(192,255,200,0.17)] py-20 mt-8">
-        <div className="mx-5 md:mx-auto xl:max-w-6xl bg-[#5DA389] rounded-3xl">
+    <div className="bg-[rgba(192,255,200,0.17)] py-8 md:py-20 mt-5 md:mt-8">
+        <div className="mx-5 md:mx-auto xl:max-w-6xl bg-white md:bg-[#5DA389] rounded-3xl">
           <Image
               src="/images/assistant-anatomy.png"
               alt="Descriptive Alt Text"
