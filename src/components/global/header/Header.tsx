@@ -33,7 +33,10 @@ export default function Header() {
       />
       <Nav isMenuOpen={isMenuOpen} />
       <div className="flex items-center justify-between w-full md:w-[220px] mt-4 md:mt-0">
-        <Login />
+        <Link href="/login" className="flex w-full md:w-80 md:text-black text-white text-xl md:text-[14px] xl:text-xl px-2 py-2 md:p-0 
+          hover:text-[#5DA389] font-medium transition-colors duration-300">
+            login
+        </Link>
         <DefaultBtn 
           text="Start Writing"
           textColor="primary" 

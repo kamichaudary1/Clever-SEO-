@@ -1,22 +1,27 @@
 "use client";
 
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import FormTitle from "@/components/form-title/FormTitle";
 import InputField from "@/components/global/ReusableInput";
 import Button from "@/components/global/ReusableFormButton";
+import Link from "next/link";
 
-interface LoginFormInputs {
+interface SignupFormInputs {
   email: string;
   password: string;
+  confirmPassword: string;
 }
 
-export default function Login() {
-  const { register, handleSubmit, formState: { errors } } = useForm<LoginFormInputs>();
+export default function Signup() {
+  const { register, handleSubmit, formState: { errors } } = useForm<SignupFormInputs>();
 
-  const onSubmit = (data: LoginFormInputs) => {
+  const onSubmit = (data: SignupFormInputs) => {
+    if (data.password !== data.confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
     console.log(data);
-    // Add your login logic here
+    // Add your signup logic here
   };
 
   return (
@@ -24,25 +29,35 @@ export default function Login() {
       <FormTitle tagline="Please sign in to your account" />
       <form onSubmit={handleSubmit(onSubmit)}>
         <InputField
+          label="Email"
           type="email"
           name="email"
           register={register}
-          errorMessage={errors.email?.message}
           validation={{ required: "Email is required" }}
+          errorMessage={errors.email?.message}
           placeholder="Enter your email"
         />
-        
         <InputField
+          label="Password"
           type="password"
           name="password"
           register={register}
-          errorMessage={errors.password?.message}
           validation={{ required: "Password is required" }}
+          errorMessage={errors.password?.message}
           placeholder="Enter your Password"
         />
-        
+        <InputField
+          label="Confirm Password"
+          type="password"
+          name="confirmPassword"
+          register={register}
+          validation={{ required: "Confirm your password" }}
+          errorMessage={errors.confirmPassword?.message}
+          placeholder="Confirm your Password"
+        />
+
         <Button 
-          text="Login"
+          text="SignUp"
           bgColor="#5DA389"          
           textColor="#FFFFFF"         
           borderColor="transparent"       
@@ -69,17 +84,9 @@ export default function Login() {
             onClick={() => console.log("Button clicked")}
           />
         </div>
-        
-        <div className="flex justify-between mt-4">
-          <label className="flex items-center text-sm">
-            <input type="checkbox" className="mr-2" />
-            Remember me
-          </label>
-          <Link href="/forgot-password" className="text-sm text-blue-500">Forgot Password?</Link>
-        </div>
-        
+
         <p className="text-center mt-4">
-          Don’t have an account? <Link href="/signup" className="text-blue-500">Create one</Link>
+          Already have an account? <Link href="/login" className="text-blue-500">Login</Link>
         </p>
       </form>
     </div>
