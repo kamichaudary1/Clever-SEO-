@@ -25,11 +25,15 @@ export default function Signup() {
   };
 
   return (
-    <div className="w-full md:w-[470px] h-[590px] mx-5 md:mx-auto mt-12 py-10 px-8 bg-white rounded-3xl">
-      <FormTitle tagline="Please sign in to your account" />
+    <div className="w-full max-w-[90%] md:max-w-[470px] mx-auto mt-12 p-6 md:py-10 md:px-8 bg-white rounded-3xl">
+      <FormTitle 
+        title="Welcome to"
+        subTitle="CleverSEO"
+        tagline="Join today and start your journey!"
+      />
       <form onSubmit={handleSubmit(onSubmit)}>
         <InputField
-          label="Email"
+          label="email"
           type="email"
           name="email"
           register={register}
@@ -47,7 +51,6 @@ export default function Signup() {
           placeholder="Enter your Password"
         />
         <InputField
-          label="Confirm Password"
           type="password"
           name="confirmPassword"
           register={register}
@@ -75,18 +78,9 @@ export default function Signup() {
             onClick={() => console.log("Button clicked")}
           />
         </div>
-        <div className="mt-4">
-          <Button 
-            text="Apple"
-            bgColor="#000"          
-            textColor="#FFFFFF"      
-            borderColor="#transparent"       
-            onClick={() => console.log("Button clicked")}
-          />
-        </div>
 
-        <p className="text-center mt-4">
-          Already have an account? <Link href="/login" className="text-blue-500">Login</Link>
+        <p className="flex flex-wrap justify-center text-center mt-4">
+          Already have an account? <Link href="/login" className="text-blue-500 ml-1">Login</Link>
         </p>
       </form>
     </div>

@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
 }) => (
   <button
     onClick={onClick}
-    className={`w-[400px] h-9 text-[15px] rounded-md hover:bg-gray-800 transition-colors`}
+    className={`w-full max-w-[400px] h-9 text-[15px] rounded-md hover:bg-gray-800 transition-colors`}
     style={{
       backgroundColor: bgColor,
       color: textColor,

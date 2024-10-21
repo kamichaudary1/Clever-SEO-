@@ -54,7 +54,7 @@ export default function DefaultBtn({
         border: border 
       }}
       onClick={onClick}
-      className={ `transition-all duration-300 font-medium shadow-lg shadow-gray-400
+      className={ `transition-all duration-300 font-medium shadow-2xl shadow-gray-800
         ${sizeClasses[size]} 
         ${buttonColor[textColor]}
         ${hoverColor[hovertextColor]}
