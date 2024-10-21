@@ -52,8 +52,7 @@ export default function BannerRow() {
           />
         </div>
         <Link href="/" 
-          className='text-black text-xl font-bold hover:text-[#5DA389] transition-all duration-300 mt-4'
-          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+          className='text-white text-xl font-bold hover:text-[#5DA389] transition-all duration-300 mt-4'>
             Learn More
         </Link>
       </div>

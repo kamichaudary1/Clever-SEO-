@@ -6,7 +6,7 @@ interface ReusableInputProps {
   register: UseFormRegister<FieldValues>;
   errorMessage?: string;
   validation?: Record<string, any>;
-  placeholder?: string;
+  placeholder: string;
 }
 
 export default function ReusableInput({
@@ -22,10 +22,14 @@ export default function ReusableInput({
       <input
         type={type}
         {...register(name, validation)}
-        className="border-none py-2 px-3 rounded-lg w-full bg-[rgba(49,114,52,0.09)] mb-3 outline-none placeholder:text-[rgba(20,48,21,0.4)] text-[14px]"
-        placeholder={placeholder} 
+        className={`border mb-3 py-2 px-3 rounded-lg w-full outline-none placeholder:text-[rgba(20,48,21,0.4)] text-[14px] ${
+          errorMessage
+            ? "border-red-500 bg-[rgba(49,114,52,0.09)]" 
+            : "border-none bg-[rgba(49,114,52,0.09)]"
+        }`}
+        placeholder={placeholder}
       />
-      {errorMessage && <span className="text-red-500 text-sm">{errorMessage}</span>}
+      {errorMessage && <span className="text-red-500 text-xs text-left w-full flex justify-start -mt-2 mb-2 ml-1">{errorMessage}</span>}
     </div>
   );
 }

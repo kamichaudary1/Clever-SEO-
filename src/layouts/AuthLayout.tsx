@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-const AuthLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+interface AuthLayoutProps {
+  children: React.ReactNode;
+  hideHeaderFooter?: boolean; // Optional prop
+}
+
+const AuthLayout: React.FC<AuthLayoutProps> = ({ children, hideHeaderFooter }) => {
   return (
     <div
       style={{
