@@ -10,7 +10,7 @@ interface PasswordUpdatedInputs {
 }
 
 export default function PasswordUpdated() {
-    const { handleSubmit, formState: { errors } } = useForm<PasswordUpdatedInputs>();
+    const { handleSubmit } = useForm<PasswordUpdatedInputs>();
 
     const onSubmit = (data: PasswordUpdatedInputs) => {
         console.log(data);

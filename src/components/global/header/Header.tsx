@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "./Nav";
 import HumberIcon from "./HumberIcon";
-import Login from "@/components/Login/Login";
+// import Login from "@/components/Login/Login";
 import DefaultBtn from "@/components/global/DefaultBtn";
 
 export default function Header() {
