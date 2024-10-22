@@ -1,11 +1,11 @@
-import { UseFormRegister, FieldValues, Path } from "react-hook-form";
+import { UseFormRegister, FieldValues, Path, RegisterOptions } from "react-hook-form";
 
 interface ReusableInputProps<T extends FieldValues> {
   type: string;
   name: Path<T>; // Correct type for 'name'
   register: UseFormRegister<T>; // Accept specific register type
   errorMessage?: string;
-  validation?: Record<string, any>;
+  validation?: RegisterOptions<T>;
   placeholder: string;
 }
 
