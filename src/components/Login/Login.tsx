@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import FormTitle from "@/components/form-title/FormTitle";
-import InputField from "@/components/global/ReusableInput";
+import ReusableInput from "@/components/global/ReusableInput";
 import Button from "@/components/global/ReusableFormButton";
 
 interface LoginFormInputs {
@@ -27,24 +27,22 @@ export default function Login() {
         tagline="Please sign in to your account" 
       />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <InputField
+        <ReusableInput<LoginFormInputs>
           type="email"
           name="email"
           register={register}
           errorMessage={errors.email?.message}
           validation={{ required: "Email is required" }}
           placeholder="Enter your email"
-          autoComplete="off"
         />
         
-        <InputField
+        <ReusableInput<LoginFormInputs>
           type="password"
           name="password"
           register={register}
           errorMessage={errors.password?.message}
           validation={{ required: "Password is required" }}
           placeholder="Enter your Password"
-          autoComplete="off"
         />
         
         <Button 
