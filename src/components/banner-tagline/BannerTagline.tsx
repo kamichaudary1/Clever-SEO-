@@ -1,13 +1,13 @@
 "use client"; // Mark this as a Client Component
 
-import bannerData from "@/lib/data/bannerTagline.json";
-import { BannerTagline } from "@/types/BannerTagline";
+// import bannerData from "@/lib/data/bannerTagline.json";
+// import { BannerTagline } from "@/types/BannerTagline";
 
 export default function BannerTaglineComponent() {
 
   // Destructure taglineText from the JSON data
-  const { taglineText, boldText } = bannerData.bannerTagline as BannerTagline;
 
+  
   return (
     <div className="flex justify-center">
       <div 
