@@ -50,7 +50,7 @@ export default function ForgetPassword() {
           bgColor="#5DA389"          
           textColor="#FFFFFF"         
           borderColor="transparent"       
-          onClick={() => console.log("Button clicked")}
+          href="/new-credentials"
         />  
         <p className="flex flex-wrap justify-center text-center mt-4">
           Remembered your Password?

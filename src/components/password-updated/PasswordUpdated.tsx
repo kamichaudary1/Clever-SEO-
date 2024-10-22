@@ -3,7 +3,6 @@
 import { useForm } from "react-hook-form";
 import FormTitle from "@/components/form-title/FormTitle";
 import Button from "@/components/global/ReusableFormButton";
-import Image from "next/image";
 
 interface PasswordUpdatedInputs {
     email: string;
